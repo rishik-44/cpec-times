@@ -1,0 +1,28 @@
+[HEADING: Blah Blah?]
+
+by Rishik [BR] [BR]
+
+Example[BR]
+[IMAGE: temporary-portrait.jpg]
+[CAPTION: Dense Jungle filled with huge trees]
+According to an article from Yahoo! Sports written by Bryce Lazenby, the Panthers are expected to regress.[BR][BR]
+
+Also, outside of wide receiver Tetairoa McMillan, there isn’t much offensive support for Young. Young played three 
+seasons at Alabama before getting drafted by the Panthers with the top overall pick in 2023. While at Alabama, he 
+was used to having an offensive line and receivers he could rely on. But he’s not getting this with the Panthers. 
+In his first season with Carolina, he got sacked 62 times, which is more than he did in both seasons he started 
+with Alabama combined. [BR][BR]
+
+The outlook this season for the Panthers this year definitely isn’t great. Currently, the Buccaneers are the favorite 
+to win the NFC South (Lazenby 2026). The Panthers have the third best odds (they are above the Falcons, but below the 
+New Orleans Saints), but the Falcons could definitely give the Panthers, Saints, and the Buccaneers a run for their money. [BR]
+
+[POLL: article1_poll]
+    question: article1_poll?
+    answers: hi | hey | ho ho
+[/POLL]
+
+[SOURCES]
+ESPN. 2026. “Bryce Young 2025 Stats per Game - NFL.” ESPN. https://www.espn.com/nfl/player/gamelog/_/id/4685720/bryce-young.
+Lazenby, Bryce. 2026. “Panthers' Spot in Power Rankings Points to Big Regression in 2026.” Yahoo! Sports.
+[/SOURCES]

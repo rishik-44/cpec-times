@@ -1,0 +1,772 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:
+        #f4f7fb;
+}
+
+/* =========================
+   TITLE BOX
+   ========================= */
+
+.title-box {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 500px;
+    border: 10px solid white;
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-box h1 {
+    margin: 0;
+    font-size: 60px;
+    color: white;
+    font-weight: 400;
+    font-family: "Manufacturing Consent", serif;
+}
+
+/* =========================
+   NAVIGATION BAR
+   ========================= */
+
+nav {
+    background-color: rgba(32, 32, 32, 0.5);
+    width: 100%;
+    height: 70px;
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    padding: 20px 30px;
+}
+
+nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+nav a:nth-child(2) {
+    margin-left: auto;
+}
+
+/* =========================
+   NAVIGATION BAR DROPDOWNS
+   ========================= */
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+
+    background-color: rgba(32, 32, 32, 0.5);
+    min-width: 220px;
+}
+
+.nav-dropdown-content a {
+    display: block;
+    padding: 15px 20px;
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+    display: block;
+}
+
+/* =========================
+   LOGO
+   ========================= */
+
+.logo {
+    padding: 0;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   HERO IMAGE
+   ========================= */
+
+.hero {
+    position: relative;
+    height: 800px;
+
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* =========================
+   WHITE BOX
+   ========================= */
+
+.white-box {
+    position: relative;
+    z-index: 2;
+
+    background:
+        radial-gradient(circle at top left, rgba(129, 140, 248, 0.2), transparent 35%),
+        #f4f7fb;
+
+    margin-top: -100px;
+    padding: 40px;
+
+    min-height: 300px;
+}
+
+/* =========================
+   SOCIAL MEDIA
+   ========================= */
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-left: 410px;
+}
+
+.insta-icon {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.insta-icon:hover {
+    transform: scale(1.25);
+}
+
+.social-text {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+}
+
+/* =========================
+   DROPDOWN MENU
+   ========================= */
+
+.dropdown {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.dropdown-button {
+    width: 1000px;
+    height: 100px;
+    padding: 15px;
+
+    border: 0;
+    background-color: white;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+
+    font-family: "Manufacturing Consent", serif;
+    font-size: 40px;
+
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #eeeeee;
+}
+
+.dropdown-content {
+    display: none;
+    width: 300px;
+    background-color: white;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.arrow {
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+
+/* =========================
+   WEKLY NEWS PAGE
+   ========================= */
+
+.weekly-news .hero {
+    position: relative;
+    height: 500px;
+
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../images/weekly-news-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    font-family: "Manufacturing Consent", serif;
+    font-size: 60px;
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   EVENTS PAGE
+   ========================= */
+
+.events .hero {
+    position: relative;
+    height: 500px;
+    background-image: url("../images/events-bg-1.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+/* =========================
+   CARD
+   ========================= */
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+
+    padding: 20px;
+    margin: 20px auto;
+
+    width: 80%;
+    min-height: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    line-height: 1.6;
+
+    color: #333;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    margin: 0;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.news-content {
+
+    display: block;
+    overflow: auto;
+}
+
+.card a {
+    display: block;
+    padding: 10px;
+    
+    color: black;
+    text-decoration: none;
+
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+}
+
+/* =========================
+   POLL
+   ========================= */
+
+.poll {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    padding: 20px;
+    margin: 20px auto;
+
+    width: 70%;
+    min-height: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    clear: both;
+}
+
+.poll h3 {
+    font-family: "Manufacturing Consent", serif;
+    font-size: 40px;
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.poll label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+
+    margin-bottom: 10px;
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.poll-answer-text {
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.poll-result {
+    flex: 1;
+    height: 30px;
+
+    margin-right: 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+.poll-result-bar {
+    height: 100%;
+    width: 0%;
+
+    background-color: black;
+}
+
+.poll-percentage {
+    width: 45px;
+    flex-shrink: 0;
+}
+
+.poll button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.poll button:hover {
+    background-color: #333;
+}
+
+/* =========================
+   HEADING
+   ========================= */
+
+h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   IMAGE + CAPTION
+   ========================= */
+
+.news-image {
+    float: left;
+    width: 35%;
+    margin: 0 20px 20px 0;
+}
+
+.news-image .card-image {
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.news-image figcaption {
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    color: #666;
+
+    margin-top: 5px;
+}
+
+/* =========================
+   SOURCES
+   ========================= */
+
+.sources {
+    clear: both;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sources h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.sources p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+
+/* =========================
+   ABOUT PAGE, TEAM CARD
+   ========================= */
+
+.team-card {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(129, 140, 248, 0.2);
+    border-radius: 15px;
+
+    padding: 20px;
+    margin: 20px auto;
+
+    flex: 1;
+
+    width: 90%;
+    min-height: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.team-card a {
+    display: block;
+    padding: 10px;
+    
+    color: black;
+    text-decoration: none;
+
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+
+/* =========================
+   MOBILE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* =========================
+       NAVIGATION BAR
+       ========================= */
+
+    nav {
+        height: auto;
+        min-height: 70px;
+
+        flex-wrap: wrap;
+        justify-content: center;
+
+        padding: 10px 0;
+    }
+
+    nav a {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    nav a:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    /* =========================
+       TITLE BOX
+       ========================= */
+
+    .title-box {
+        top: 180px;
+
+        width: 80%;
+        box-sizing: border-box;
+
+        border: 5px solid white;
+        padding: 20px;
+    }
+
+    .title-box h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    /* =========================
+       HERO IMAGE
+       ========================= */
+
+    .hero {
+        height: 500px;
+
+        background-position: center;
+    }
+
+    .weekly-news .hero {
+        height: 400px;
+
+        background-position: center;
+    }
+
+    /* =========================
+       WHITE BOX
+       ========================= */
+
+    .white-box {
+        margin-top: -50px;
+        padding: 15px;
+    }
+
+    /* =========================
+       CARDS
+       ========================= */
+
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    /* =========================
+       HEADINGS
+       ========================= */
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    /* =========================
+       DROPDOWN MENU
+       ========================= */
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-button {
+        width: 100%;
+        box-sizing: border-box;
+
+        height: auto;
+        min-height: 70px;
+
+        padding: 15px;
+
+        font-size: 30px;
+
+        border-bottom-right-radius: 0;
+    }
+
+    .dropdown-content {
+        width: 100%;
+    }
+
+    /* =========================
+       SOCIAL MEDIA
+       ========================= */
+
+    .social-icons {
+        margin-left: 0;
+
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+    .insta-icon {
+        width: 70px;
+    }
+
+    .social-text {
+        font-size: 18px;
+    }
+
+    /* =========================
+       NEWS IMAGE
+       ========================= */
+
+    .news-image {
+        float: none;
+
+        width: 100%;
+
+        margin: 0 0 20px 0;
+    }
+
+    /* =========================
+       POLL
+       ========================= */
+
+    .poll {
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 10px;
+    }
+
+    .poll h3 {
+        font-size: 30px;
+    }
+
+    .poll label {
+        gap: 8px;
+        padding: 10px;
+
+        font-size: 16px;
+    }
+
+    .poll-answer-text {
+        width: 80px;
+    }
+
+    .poll-result {
+        height: 25px;
+        margin-right: 5px;
+    }
+
+    .poll-percentage {
+        width: 40px;
+    }
+
+    /* =========================
+       ABOUT PAGE
+       ========================= */
+
+    .team-container {
+        grid-template-columns: 1fr;
+    }
+
+    .team-card {
+        width: 100%;
+        box-sizing: border-box;
+
+        margin: 10px 0;
+    }
+
+    /* =========================
+       PARAGRAPHS
+       ========================= */
+
+    p {
+        font-size: 17px;
+    }
+
+    .card a {
+        font-size: 13px;
+    }
+
+    /* =========================
+    CLUBS PAGE
+    ========================= */
+
+    .bottom {
+        display: block !important;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    .col1,
+    .col2 {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    [class^="content"] {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        height: auto;
+        min-height: 150px;
+
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .col1 img,
+    .col2 img {
+        width: 90px;
+        height: 90px;
+        flex-shrink: 0;
+    }
+}
