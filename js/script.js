@@ -66,7 +66,7 @@ if (navbar) {
                 <a href="weekly-news.html">Weekly News ▾</a>
 
                 <div class="nav-dropdown-content">
-                    <a href="week.html?week=week1">Aug 16 - Aug 22, 2026</a>
+                    <a href="week.html?week=week1">Sep 6 - Sep 12</a>
                 </div>
             </div>
 
@@ -303,7 +303,7 @@ const selectedWeek = parameters.get("week") || "week1";
 const weeks = {
 
     week1: {
-        title: "Aug 16 - Aug 22, 2026",
+        title: "Sep 6 - Sep 12",
         file: "articles/weekly-news-folder/week1.txt"
     },
 
@@ -386,7 +386,7 @@ if (currentWeek && newsEl) {
                     // Turn the image and caption into one figure
                     return `
                         <figure class="news-image">
-                            <img src="images/${imageName}" alt="" class="card-image">
+                            <img src="${imageName.startsWith('http') ? imageName : `images/${imageName}`}" alt="" class="card-image">
                             <figcaption>${captionText}</figcaption>
                         </figure>
                     `;

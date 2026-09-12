@@ -267,13 +267,17 @@ h2 {
    CARD
    ========================= */
 
+.week-news .card {
+    margin-top: 100px;
+}
+
 .card {
     background-color: white;
     border-radius: 15px;
 
     padding: 20px;
     margin: 20px auto;
-
+    
     width: 80%;
     min-height: 200px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
