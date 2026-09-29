@@ -290,7 +290,7 @@ async function loadPollResults(poll) {
 // Example: week.html?week=week3
 const parameters = new URLSearchParams(window.location.search);
 
-const selectedWeek = parameters.get("week") || "week1";
+const selectedWeek = parameters.get("week") || "week2";
 
 
 // =========================
