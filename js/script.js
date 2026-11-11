@@ -68,6 +68,7 @@ if (navbar) {
                 <div class="nav-dropdown-content">
                     <a href="week.html?week=week1">Sep 6 - Sep 12</a>
                     <a href="week.html?week=week2">Sep 13 - Sep 28</a>
+                    <a href="week.html?week=week3">Oct 1 - Oct 28</a>
                 </div>
             </div>
 
@@ -310,6 +311,10 @@ const weeks = {
     week2: {
         title: "Sep 13 - Sep 28",
         file: "articles/weekly-news-folder/week2.txt"
+    },
+    week3: {
+        title: "Oct 1 - Oct 28",
+        file: "articles/weekly-news-folder/week3.txt"
     },
 
 };
